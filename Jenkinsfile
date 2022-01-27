@@ -14,7 +14,7 @@ pipeline {
 		stage ('Test') {
 			steps {
 				echo "Running test"
-				sh 'python -m pytest app.py'
+				sh 'python3 -m pytest app.py'
 				}
 			}
 		stage ('Kubernetes')
