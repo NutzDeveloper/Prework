@@ -6,9 +6,9 @@ pipeline {
 		stage ('Preperation') {
 			steps {
 
-		//	 withEnv(["HOME=${env.WORKSPACE}"]) {
+			 withEnv(["HOME=${env.WORKSPACE}"]) {
 				echo "Installing Dependencies"
-		//		sh 'pip3 install pytest --upgrade'			}
+				sh 'pip3 install pytest --upgrade'			}
 				}
 		}
 		stage ('Test') {
